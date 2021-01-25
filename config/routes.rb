@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   get '/games' => 'games#index'
   get '/games/:id' => 'games#show'
   post "/", to: "auth#login"
+  post "/user_games" => "user_games#create"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
