@@ -12,7 +12,7 @@ UserGame.destroy_all
 Review.destroy_all
 
 
-User.create(username: "user1")
+User.create(username: "user1", password: "123")
 
 Game.create(title: "Doom Eternal: Standard Edition", genre: "First-Person Shooter", maturity_rating:"Mature", description:"The follow-up to 2016’s Doom reboot is as explosive as ever, but this isn’t just a fast-paced shooter. In addition to running and gunning, you’ll balance unique resource management mechanics that make for a super-nuanced battle against the hordes from hell.", image:"https://www.mobygames.com/images/covers/l/642689-doom-eternal-playstation-4-front-cover.png")
 Game.create(title: "Nioh 2", genre: "Action", maturity_rating:"Mature", description:"One-word description of Nioh 2: Wow. The follow-up to the original Nioh is a prequel to that story, but it’s that much more exciting, delivering intricate battling mechanics that can’t help but remind me of Ninja Gaiden. But then you control yourself as a Yokai, and things get even more vicious, and visceral.", image:"https://www.mobygames.com/images/covers/l/641257-nioh-2-playstation-4-front-cover.jpg")
@@ -37,9 +37,9 @@ Game.create(title: "DRAGON BALL Z: Kakarot", genre: "Action", maturity_rating:"T
 Game.create(title: "Nier: Automata", genre: "Action", maturity_rating:"Mature", description:"NieR:Automata is an action role-playing video game developed by Platinum Games and published by Square Enix for the PlayStation 4 and PC. It is the indirect sequel to both NieR RepliCant and NieR Gestalt (NIER), and is set in the year 11945, during the 14th Machine War.", image:"https://www.mobygames.com/images/covers/l/382107-nier-automata-playstation-4-front-cover.jpg")
 
 # A user must have a UserGame instance to review a game
-Review.create(user_id: User.first.id, game_id: Game.first.id, rating: 2.3, content: '3sdadasda')
+# Review.create(user_id: User.first.id, game_id: Game.first.id, rating: 2.3, content: '3sdadasda')
 
 # UserGame means the game was added to your game list as a played game, no review, not favorited by default
-UserGame.create(user_id: User.first.id, game_id: Game.second.id, favorite: false)
+# UserGame.create(user_id: User.first.id, game_id: Game.second.id, favorite: false)
 
 
