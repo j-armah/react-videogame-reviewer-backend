@@ -18,6 +18,7 @@ class ReviewsController < ApplicationController
     def update
         review = Review.find(params[:id])
         review.update(review_params)
+        # byebug
         render json: review
     end
 
@@ -30,6 +31,6 @@ class ReviewsController < ApplicationController
     private
 
     def review_params
-        params.permit(:user_id, :game_id, :rating, :content)
+        params.permit(:id, :user_id, :game_id, :rating, :content)
     end
 end

@@ -1,5 +1,5 @@
 class GameSerializer < ActiveModel::Serializer
-  attributes :id, :title, :genre, :maturity_rating, :description, :image, :user_games
+  attributes :id, :title, :genre, :maturity_rating, :description, :image, :user_games, :banner, :video
 
   has_many :user_games
   has_many :users, through: :user_games

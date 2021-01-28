@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 2021_01_26_202539) do
     t.string "maturity_rating"
     t.text "description"
     t.string "image"
+    t.string "banner"
+    t.string "video"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

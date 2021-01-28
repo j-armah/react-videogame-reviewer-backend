@@ -6,6 +6,8 @@ class CreateGames < ActiveRecord::Migration[6.0]
       t.string :maturity_rating
       t.text :description
       t.string :image
+      t.string :banner
+      t.string :video
 
       t.timestamps
     end
