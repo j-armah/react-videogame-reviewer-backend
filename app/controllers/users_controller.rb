@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    before_action :authorize, only: [:profile]
+    # before_action :authorize, only: [:profile]
 
     def index
         users = User.all
