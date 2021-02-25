@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-    # before_action :authorize, only: [:profile]
+    before_action :authorize, only: [:profile]
 
     def index
         users = User.all
@@ -13,6 +13,7 @@ class UsersController < ApplicationController
     end
 
     def profile
+        puts @user
         render json: @user
     end
 end
