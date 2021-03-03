@@ -18,6 +18,10 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
+# misc
+
+.env
+
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
